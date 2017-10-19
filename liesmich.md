@@ -11,7 +11,7 @@
  
  
   
-## scripts 
+# scripts 
     
     "preinstall": "cd electron && npm install",
     "install": "cd electron && npm run rebuild-native-modules",
