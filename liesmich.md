@@ -11,7 +11,8 @@
  
  
   
-    "scripts": {
+## scripts 
+    
     "preinstall": "cd electron && npm install",
     "install": "cd electron && npm run rebuild-native-modules",
     "postinstall": "cd electron && npm run rebuild-neon",
@@ -24,6 +25,8 @@
     "lint": "eslint electron",
     "lint:fix:style": "prettier --single-quote --print-width=120 --write '**/*.css'",
     "jest": "jest",
+    
+## test: 
     "test": "npm run lint && npm run jest && electron-mocha tests",
     "build:macos": "grunt macos-prod",
     "build:win": "grunt win-prod",
