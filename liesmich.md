@@ -1,13 +1,15 @@
 # liesmich
 
-  "name": "wire-desktop",
-  "license": "LicenseRef-LICENSE",
-  "private": true,
-  "lint-staged": {
+
+    "name": "wire-desktop",
+    "license": "LicenseRef-LICENSE",
+    "private": true,
+    "lint-staged": {
     "*.css": [
       "npm run lint:style",
       "git add"
-    ]
+ 
+ 
   
     "scripts": {
     "preinstall": "cd electron && npm install",
@@ -28,16 +30,21 @@
     "build:linux": "grunt linux-prod",
     "bundle:dev": "webpack",
     "bundle": "webpack --env.production"
-  
+ 
+ 
+ 
     "repository": {
     "type": "git",
     "url": "https://github.com/wireapp/wire-desktop.git"
-  
+ 
+ 
+ 
     "build": {
     "directories": {
       "buildResources": "resources",
       "app": "electron",
       "output": "wrap/dist"
+
 
   
     "devDependencies": {
@@ -66,7 +73,8 @@
     "load-grunt-tasks": "3.5.2",
     "prettier": "1.7.4",
     "style-loader": "0.19.0",
-  
+
+
     "webpack": "3.8.1"
     "dependencies": {
     "debug": "3.1.0"
